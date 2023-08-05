@@ -137,3 +137,51 @@ function milesTokilometer(miles){
 let givenMiles=1234;
 let givenMilesToKilometer=milesTokilometer(givenMiles);
 console.log(givenMiles+" Miles is " +givenMilesToKilometer+" Kilometer");
+
+//11--------find  even return true if even ,false if odd
+
+function isEven(number){
+    if(number%2===0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+let myNumberIsEven=isEven(800);
+console.log(myNumberIsEven);
+let myNumberIsEven2=isEven(677);
+console.log(myNumberIsEven2);
+
+
+//12--------leap year or not
+function isLeapYear(year){
+if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+    {
+        return true;
+    }
+    else{
+        return false;
+    } 
+
+}
+let myYear=isLeapYear(2023);
+console.log(myYear);
+let nextYear=isLeapYear(2024);
+console.log(nextYear);
+
+
+//13-----sum of an array
+
+function sumOfAnArray(arr){
+    let sum=0;
+    for(let i=0;i<arr.length;i++){
+        let index=i;
+        let element=arr[i];
+        sum+=arr[i];
+        console.log(index,element,sum);
+}
+return sum;
+}
+let myArray=sumOfAnArray([10,48,465,78]);
+console.log("The sum is: "+myArray);
