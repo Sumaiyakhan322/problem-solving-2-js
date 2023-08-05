@@ -185,3 +185,47 @@ return sum;
 }
 let myArray=sumOfAnArray([10,48,465,78]);
 console.log("The sum is: "+myArray);
+
+//14-------find odd numbers of an array and sum of the odd numbers
+function findOddNumbersOfAnArray(arr){
+    let oddArray=[];
+    for(let i=0; i<arr.length;i++){
+        let index=i;
+        let element=arr[i];
+        if(element%2===0){
+            console.log(index,element);
+            oddArray.push(element);
+        }
+    }
+    return oddArray
+}
+let myGivenArray=findOddNumbersOfAnArray([1,4,123,54,78,88,99,55]);
+console.log(myGivenArray);
+let sumOfTheOddArray=sumOfAnArray(myGivenArray)//from my previous function
+console.log(sumOfTheOddArray);
+
+
+//15-----------factorial 
+function factorial(number){
+    let prd=1;
+    for(i=1;i<=number;i++){
+        prd*=i;
+    }
+    return prd;
+
+}
+let myFactNum=factorial(5);
+console.log("Factorial of my Given number is "+myFactNum);
+
+//16--------factorial with decrementing loop
+function factorialInDecrementing(number){
+    let i=number;
+    prd=1;
+    while(i>=1){
+        prd=i*prd;
+        i--;
+    }
+    return prd;
+}
+myFactNum=factorialInDecrementing(7);
+console.log(myFactNum);
