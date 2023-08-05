@@ -229,3 +229,26 @@ function factorialInDecrementing(number){
 }
 myFactNum=factorialInDecrementing(7);
 console.log(myFactNum);
+
+//17----------an array of some years is given .make an array that contains the leap years
+function arrayOfLeapYears(arr){
+  let  leapYears=[];
+    for(i=0;i<arr.length;i++){
+        let year=arr[i];
+    if(((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
+         leapYears.push(year);
+    }
+}
+return leapYears;
+}
+var myGivenArrayOfYears=[2023,2024,2025,2028,2030];
+var myGivenArrayOfYearsOfLeapYears=arrayOfLeapYears(myGivenArrayOfYears);
+console.log(myGivenArrayOfYears+" From This given array of years the leap years are "+myGivenArrayOfYearsOfLeapYears);
+
+//18------convert convert hour to min
+function convertToMin(hour){
+    let min=hour*60;
+    return min;
+}
+let myHour=convertToMin(6);
+console.log(myHour);
