@@ -104,3 +104,36 @@ function odd_even(number){
     }
 }
 odd_even(66);
+
+
+//8---------use switch for crossing the roads
+let color='yellow';
+switch(color){
+    case 'red':
+        console.log("Danger");
+        break;
+    case 'yellow':
+        console.log("Stop");
+        break;
+    case 'green':
+        console.log("Cross th road");
+
+}
+
+//9---convert inch to feet
+function convertToFeet(inch){
+    let feet=inch/12;
+    return feet;
+}
+let hight=84;
+let inch=convertToFeet(hight);
+console.log(hight+" inch is "+inch +" feet");
+
+//10--------miles to kilometer
+function milesTokilometer(miles){
+    let kilometer=miles*1.609;
+    return kilometer;
+}
+let givenMiles=1234;
+let givenMilesToKilometer=milesTokilometer(givenMiles);
+console.log(givenMiles+" Miles is " +givenMilesToKilometer+" Kilometer");
