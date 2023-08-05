@@ -56,4 +56,51 @@ function isIsosceles(a,b,c){
 isIsosceles(8,8,9);
 
 
+//4-------------Find the avg of 5 numbers given in array
 
+function avgOfArray(arr){
+    var sum=0;
+    for(var i=0;i<arr.length;i++){
+        sum +=arr[i];
+      var  avg=sum/(arr.length);
+    }
+   return avg;
+    
+}
+var myNumbers=[75.25,65,80,35.45,99.50];
+var myAvg=avgOfArray(myNumbers);
+console.log(myAvg.toFixed(2));
+
+
+//5------------find remainder 
+function findRemainder(myNumber){
+    let remainder=myNumber%5;
+    return remainder;
+}
+var myGivenNumber=119;
+var myRemainder=findRemainder(myGivenNumber);
+console.log(myRemainder);
+
+//6------write a function called foo() that prints foo , also write a function named bar() that prints bar .Call function bar() in the foo() after printing .Now call the foo( ) to see the result.
+function bar(){
+    console.log("bar");
+}
+function foo(){
+    console.log("foo");
+    bar();
+}
+foo();
+
+//7----------Write a function called odd_even() which takes an integer and fin whether it is add or even
+function odd_even(number){
+    if(number%2==0){
+        console.log("The given integer is even");
+    }
+    else if(number%2!=0){
+        console.log("The integer is odd");
+    }
+    else{
+        console.log("The number is zero");
+    }
+}
+odd_even(66);
