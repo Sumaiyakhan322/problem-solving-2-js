@@ -77,3 +77,33 @@ function findLowest(arr){
 const height2=[20,48,459,9,67,3];
 const lowestHeight=findLowest(height2);
 console.log("The lowest is: ",lowestHeight);
+
+//8-----------reverse string 
+function reversString(text){
+    let reversed="";
+    for(let i=text.length-1;i>=0;i--){
+        let element=text[i];
+        reversed=reversed+element;
+        console.log(element,reversed);
+        
+    }
+    return reversed;
+    
+}
+let myString="Hello Sumaiya";
+let myreversed=reversString(myString);
+console.log("My reversed string is :",myreversed);
+
+//9---------reverse words 
+function reverseWord(text){
+    let split=text.split(" ");
+    let result=[];
+    for(let i=split.length-1;i>=0;i--){
+        let element=split[i];
+        result.push(element);
+    }
+    let reverserd=result.join(" ");
+    return reverserd;
+}
+let myreversedWord=reverseWord(myString);
+console.log("My reversed string is :",myreversedWord);
